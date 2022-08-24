@@ -1,11 +1,13 @@
 package com.javaguides.springboot_thymleaf_crud_web.service;
 
-import com.javaguides.springboot_thymleaf_crud_web.model.Empolyee;
+import com.javaguides.springboot_thymleaf_crud_web.model.Employee;
 
 import java.util.List;
 
 public interface EmployeeService {
-    List<Empolyee> getAllEmployees();
+    List<Employee> getAllEmployees();
 
-    void saveEmployee(Empolyee empolyee);
+    void saveEmployee(Employee employee);
+    Employee getEmployeeById(long id);
+    void deleteEmployeeById(long id);
 }
